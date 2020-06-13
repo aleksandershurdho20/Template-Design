@@ -1,19 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
- <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-  <strong class="font-bold">Hello!</strong>
-  <span class="block sm:inline">WORLD.</span>
-  <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-    <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
-  </span>
-</div>
-    </div>
-  );
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import SubFooter from './components/subfooter/SubFooter';
+import Form from './components/form/form';
+import team from './img/team-viewer.png';
+import demo from './img/demodesk.png';
+import urban from './img/urban-sport.png';
+import loyalty from './img/Loyalty.png';
+class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+          <Header />
+          <div className="body">
+              <Form />
+          </div>
+          <SubFooter/>
+          <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

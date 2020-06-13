@@ -1,0 +1,35 @@
+.start-project{
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(43,73,255);
+}
+.container-text{
+    margin-bottom: 5%;
+}
+form{
+
+}
+input[type="text"], input[type="password"], input[type="number"]{
+    width: 100%;
+}
+.container-country{
+    display: flex;
+}
+textarea{
+    width: 100%;
+}
+.checked{
+    display: flex;
+}
+.container-inside-marketing{
+    display: flex;
+}
+.right-form{
+    margin-left: 20%;
+}
+.select-fill{
+    width: 100%;
+}
