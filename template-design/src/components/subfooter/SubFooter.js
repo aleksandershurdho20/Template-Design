@@ -5,31 +5,30 @@ import demo from '../../img/demodesk.png';
 import urban from '../../img/urban-sport.png';
 import loyalty from '../../img/Loyalty.png';
 
-function SubFooter(){
+const SubFooter = props =>{
+    const {informationOne,informationTwo,informationThree,title,informationFour,clientTitle}=props;
     return(
         <div className="subfooter-component ">
             <div>
-                <h3><strong>Get in touch</strong></h3>
+                <h3><strong>{title}</strong></h3>
             </div>
             <div>
-                <p>Want to see how zengrowth can help you and your team?
-                    well listen to your story and propose a data-driven growth,
-                    plan with channel that fit across your customer journey 
-                </p>
+                <p>{props.description}</p>
+                
                 <div className="container-circle">
                     <div className="left-circle">
-                    <p className="circle">Predictible lead generation</p>
-                    <p className="circle">Rapid marketing Experimentation</p>
+                    <p className="circle">{informationOne}</p>
+                    <p className="circle">{informationTwo}</p>
                     </div>
                     <div className="right-circle">
-                        <p className="circle">Lower Customer acquisition cost</p>
-                        <p className="circle">Increase marketing dbi</p>
+                        <p className="circle">{informationThree}</p>
+                        <p className="circle">{informationFour}</p>
                     </div>
                 </div>
             </div>
             <hr />
             <div>
-                <p><strong>Trusted growth partner for hyper-growt companies</strong></p>
+                <p><strong>{clientTitle}</strong></p>
                 <div className="container-image">
                     <div className="inside-image-left">
                         <img src={team}/>
@@ -42,7 +41,7 @@ function SubFooter(){
                     
                 </div>
             </div>
-            
+            <div className="right-half"></div>
         </div>
     );
 }
