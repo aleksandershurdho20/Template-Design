@@ -7,7 +7,7 @@ import loyalty from '../../img/Loyalty.png';
 
 function SubFooter(){
     return(
-        <div className="subfooter-component">
+        <div className="subfooter-component ">
             <div>
                 <h3><strong>Get in touch</strong></h3>
             </div>
