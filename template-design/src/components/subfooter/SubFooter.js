@@ -6,14 +6,14 @@ import urban from '../../img/urban-sport.png';
 import loyalty from '../../img/Loyalty.png';
 
 const SubFooter = props =>{
-    const {informationOne,informationTwo,informationThree,title,informationFour,clientTitle}=props;
+    const {informationOne,informationTwo,informationThree,title,informationFour,clientTitle,description}=props;
     return(
         <div className="subfooter-component ">
             <div>
                 <h3><strong>{title}</strong></h3>
             </div>
             <div>
-                <p>{props.description}</p>
+                <p>{description}</p>
                 
                 <div className="container-circle">
                     <div className="left-circle">
@@ -41,7 +41,6 @@ const SubFooter = props =>{
                     
                 </div>
             </div>
-            <div className="right-half"></div>
         </div>
     );
 }

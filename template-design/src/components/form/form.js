@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./form.css";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 const Form = props => {
   const{formTitle,projectTitle,projectInteresting,projectBudget}=props;
   const [username, setUsername] = useState("");
@@ -19,6 +20,7 @@ const Form = props => {
   // console.log(checkbox)
   return (
     <div className="w-full max-w-xs">
+      
       {/* <div className="container-text">
                 <h2 className="text-center">Let us get to know your better</h2>
             </div> */}
@@ -185,7 +187,17 @@ const Form = props => {
             Start your project
           </button>
         </div>
+
       </form>
+      <div className="sidepart"></div>
+      {/* <div className="submit">
+            <div className="submit-circle">
+              <div className="checker">
+                <FontAwesomeIcon icon={faCheck}/>
+              </div>
+            </div>
+            <h3 className="text-response">Thanks for your interest</h3>
+      </div> */}
     </div>
   );
 }

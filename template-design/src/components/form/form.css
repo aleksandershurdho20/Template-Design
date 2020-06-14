@@ -2,7 +2,7 @@
     border: none;
     border-radius: 2px;
     padding: 10px;
-    width: 100%;
+    width:50%;
     margin-top: 20px;
     background-color: rgb(43,73,255);
 }
@@ -32,4 +32,57 @@ textarea{
 }
 .select-fill{
     width: 100%;
+}
+.sidepart{
+    position: absolute;
+    width: 526px;
+    height: 824px;
+    left: 90%;
+    /* padding-top: 59%; */
+    top: 63.62px;
+    background: #89C8F9;
+}
+.submit{
+    position: absolute;
+    width: 526px;
+    height: 824px;
+    left: 738px;
+    top: 137.62px;
+
+    background: #FFF;
+    border-radius: 5px;
+}
+.submit .submit-circle{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 201px;
+    top: 281.3px;
+    background: #89C8F9;
+}
+.checker{
+    position: absolute;
+    color: #FFF;
+    left: 24px;
+    top: 18px;
+
+}
+.text-response{
+    position: absolute;
+width: 358.92px;
+height: 32px;
+top: 448.7px;
+color: black;
+/* font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 31px; */
+font-weight: bold;
+display: flex;
+justify-content: center;
+left: 13%;
+text-align: center;
+
 }
