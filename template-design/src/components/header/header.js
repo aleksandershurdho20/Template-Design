@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./header.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends Component {
   constructor(props) {
@@ -58,7 +56,7 @@ class Header extends Component {
               </li>
               <li>
                 <div className="nav-link">
-                  <FontAwesomeIcon icon={faSearch}/>
+                  <i className="fas fa-search"></i>
                 </div>
               </li>
             </ul>

@@ -9,6 +9,7 @@
 .circle {
   background: url("../../img/checked.png") no-repeat;
   background-size: 20px;
+  margin: 20px 0px;
 }
 
 .image-container {

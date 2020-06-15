@@ -29,6 +29,10 @@ img {
   width: 180px;
 }
 
+p {
+  margin: 0;
+}
+
 .wrapper {
   display: grid;
   grid-template-areas:
@@ -47,7 +51,7 @@ img {
   grid-area: subfootbody;
   display: flex;
   flex-direction: column;
-  background-color: #162777;
+  background: linear-gradient(90deg, rgb(22, 39, 119) 70%, #89c8f9 70%);
 }
 
 .content-body > * {

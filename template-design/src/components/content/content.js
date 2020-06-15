@@ -1,5 +1,5 @@
-import "./content.css";
 import React from "react";
+import "./content.css";
 import team from "../../img/team-viewer.png";
 import demo from "../../img/demodesk.png";
 import urban from "../../img/urban-sport.png";

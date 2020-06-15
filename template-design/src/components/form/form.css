@@ -1,5 +1,5 @@
 input[type="text"],
-input[type="email"],
+input[type="password"],
 input[type="number"] {
   width: 100%;
 }
@@ -12,6 +12,32 @@ textarea {
   width: 100%;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
+.my-input {
+  border-width: 1px;
+  border-color: lightgrey;
+  border-style: solid;
+}
+
+.input-wrapper input {
+  padding-right: 35px;
+}
+
+.input-error-symbol-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.input-error-symbol-container i {
+  color: red;
+}
+
 .username,
 .marketing-container {
   display: flex;
@@ -19,6 +45,7 @@ textarea {
 
 .username {
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 .username div {
@@ -31,8 +58,10 @@ textarea {
   margin-left: 0px;
 }
 
-.f-name {
-  margin-bottom: 20px;
+.error-message {
+  font-size: 12px;
+  color: red;
+  margin-left: 5px;
 }
 
 .country-selector-container {
@@ -76,13 +105,7 @@ textarea {
   width: 100%;
 }
 
-/* .sidepart {
-  position: absolute;
-  width: 640px;
-  height: 824px;
-  top: 78.62px;
-  background: #89c8f9;
-} */
+
 .form-container {
   position: relative;
 }
@@ -170,10 +193,6 @@ line-height: 31px; */
   text-decoration: underline;
 }
 
-.add_border {
-  border: 1px solid #FF5555 !important;
-}
-
 @media only screen and (min-width: 900px) {
   .username {
     flex-direction: row;
@@ -185,15 +204,9 @@ line-height: 31px; */
 
   .f-name {
     margin-right: 5px;
-    margin-bottom: 0px;
   }
 
   .l-name {
     margin-left: 5px;
   }
-}
-.email-handling{
-  width: 100%;
-  background: red;
-  color: #fff;
 }
