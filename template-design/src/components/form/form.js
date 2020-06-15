@@ -19,6 +19,7 @@ const Form = props => {
   // console.log(budget)
   // console.log(checkbox)
   return (
+    
     <div className="w-full max-w-xs">
       
       {/* <div className="container-text">
@@ -189,15 +190,18 @@ const Form = props => {
         </div>
 
       </form>
-      <div className="sidepart"></div>
-      {/* <div className="submit">
+      {/* <div className="sidepart"></div> */}
+      <div className="submit">
             <div className="submit-circle">
               <div className="checker">
                 <FontAwesomeIcon icon={faCheck}/>
               </div>
             </div>
             <h3 className="text-response">Thanks for your interest</h3>
-      </div> */}
+            <p className="second-response">We’ll get in touch with you very soon!</p>
+            <p className="third-response">P.S. In the meantime, learn more about growth marketing strategies <span className="fake-link">from our blog.</span></p>
+
+      </div>
     </div>
   );
 }

@@ -34,12 +34,16 @@ textarea{
     width: 100%;
 }
 .sidepart{
-    position: absolute;
+    /* position: absolute;
     width: 526px;
     height: 824px;
     left: 90%;
-    /* padding-top: 59%; */
     top: 63.62px;
+    background: #89C8F9; */
+    position: absolute;
+    width: 640px;
+    height: 824px;
+    top: 78.62px;
     background: #89C8F9;
 }
 .submit{
@@ -54,18 +58,27 @@ textarea{
 }
 .submit .submit-circle{
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     position: absolute;
     left: 201px;
     top: 281.3px;
     background: #89C8F9;
 }
 .checker{
-    position: absolute;
+    /* position: absolute;
     color: #FFF;
     left: 24px;
-    top: 18px;
+    top: 18px; */
+    position: absolute;
+    color: #FFF;
+    left: 60px;
+    top: 35px;
+    /* right: 5px; */
+    left: 52px;
+    text-align: center;
+    font-size: 42px;
+
 
 }
 .text-response{
@@ -73,7 +86,7 @@ textarea{
 width: 358.92px;
 height: 32px;
 top: 448.7px;
-color: black;
+color: #4C4C4C;
 /* font-family: Lato;
 font-style: normal;
 font-weight: bold;
@@ -85,4 +98,42 @@ justify-content: center;
 left: 13%;
 text-align: center;
 
+}
+/* input[type="text"], input[type="password"], input[type="number"],textarea:focus{
+    border: 1px solid rgb(43,73,255) !important;
+    box-shadow: 0 0 3px rgb(43,73,255) !important;
+    -moz-box-shadow: 0 0 3px rgb(43,73,255) !important;
+    -webkit-box-shadow: 0 0 3px rgb(43,73,255) !important;
+} */
+::placeholder{
+    color: rgb(43,73,255);
+}
+.second-response{
+    position: absolute;
+    width: 526px;
+    left: -17px;
+    top: 487.7px;
+    
+    line-height: 26px;
+    text-align: center;
+    color: #4C4C4C;
+}
+.third-response{
+    
+position: absolute;
+width: 335.97px;
+height: 52px;
+left: 108.02px;
+top: 561.21px;
+
+font-size: 16px;
+line-height: 26px;
+
+text-align: center;
+
+color: #4C4C4C;
+}
+.fake-link{
+    color: blue;
+    text-decoration: underline;
 }
