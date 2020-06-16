@@ -45,3 +45,34 @@
     margin-right: 20px;
   }
 }
+.footer-divider{
+  width: 240%;
+  position: relative;
+  left: 4%;
+
+}
+.copyright-wrapper{
+  position: absolute;
+  margin-top: 33px;
+}
+.inner-copyright{
+  color: #444444;
+  
+  padding-top: 6px;
+  left: 7%;
+  position: relative;
+}
+.footer-fake-links{
+  justify-content: flex-end;
+  display: flex;
+  float: right;
+  font-size: 13px;
+  position: relative;
+  left: 197%;
+  text-align: right;
+  padding-top: 5px;
+  color: #444444;
+}
+/* .last-cr{
+  margin-right: 10%;
+} */

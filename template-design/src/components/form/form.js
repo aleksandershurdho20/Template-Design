@@ -28,7 +28,6 @@ const Form = ({
   const [checkbox, setCheckbox] = useState(false);
   //? Budget
   const [budget, setBudget] = useState("");
-
   //* Refs
   const submitAlert = useRef();
   const firstNameInput = useRef();
@@ -86,6 +85,8 @@ const Form = ({
     const hasErrors = checkForWrongInputs();
     if (hasErrors) return;
     submitAlert.current.style = "display: flex";
+    //Console Log values from inputs
+    console.log(`firstname : ${firstName}, lastname : ${lastName}, email : ${email}, country : ${country}, phone : ${phone},project : ${project} ,checkbox : ${checkbox},budget : ${budget}`);
   };
 
   return (
@@ -316,7 +317,8 @@ const Form = ({
         </p>
       </div>
       {/* <div className="sidepart"></div> */}
-    </div>
+    
+    </div> //Main div ending
   );
 };
 
